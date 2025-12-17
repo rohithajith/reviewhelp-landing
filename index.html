@@ -887,6 +887,18 @@
     }
     
     @media (max-width: 768px) {
+      .navbar {
+        padding: 0.75rem 1rem;
+      }
+      
+      .navbar-brand img {
+        height: 32px;
+      }
+      
+      .navbar-brand span {
+        font-size: 1rem;
+      }
+      
       .navbar-links {
         display: none;
       }
@@ -895,63 +907,201 @@
         display: block;
       }
       
+      .hero {
+        padding: 100px 1rem 60px;
+      }
+      
       .hero-content {
         grid-template-columns: 1fr;
         text-align: center;
+        gap: 2rem;
       }
       
       .hero h1 {
-        font-size: 2rem;
+        font-size: 1.75rem;
+        line-height: 1.3;
       }
       
       .hero p {
-        font-size: 1rem;
+        font-size: 0.95rem;
       }
       
       .hero-buttons {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .hero-buttons .btn {
+        width: 100%;
+        max-width: 280px;
         justify-content: center;
       }
       
       .hero-features {
         justify-content: center;
+        gap: 0.75rem;
+        flex-direction: column;
+        align-items: center;
       }
       
       .phone-mockup {
         display: none;
       }
       
+      .problems,
+      .how-it-works,
+      .benefits,
+      .pricing,
+      .contact,
+      .cta {
+        padding: 50px 1rem;
+      }
+      
       .problems-grid,
       .steps-grid {
         grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+      
+      .problem-card {
+        padding: 1.5rem;
+      }
+      
+      .problem-card .emoji {
+        font-size: 2.5rem;
+      }
+      
+      .solution-box {
+        padding: 2rem 1.5rem;
+      }
+      
+      .solution-box h3 {
+        font-size: 1.4rem;
+      }
+      
+      .solution-box p {
+        font-size: 0.95rem;
+      }
+      
+      .step-content {
+        padding: 1.5rem;
+        padding-top: 2rem;
+        min-height: auto;
+      }
+      
+      .step-content .material-icons {
+        font-size: 36px;
       }
       
       .benefits-grid,
       .contact-grid {
         grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+      
+      .benefits-grid h2 {
+        font-size: 1.5rem !important;
+        margin-bottom: 1.5rem !important;
+      }
+      
+      .benefit-item {
+        flex-direction: column;
+        text-align: center;
+      }
+      
+      .benefit-icon {
+        margin: 0 auto;
+      }
+      
+      .perfect-for-box {
+        padding: 1.5rem;
+      }
+      
+      .perfect-for-grid {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
       }
       
       .pricing-grid {
         grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+      
+      .pricing-card {
+        padding: 1.5rem;
+      }
+      
+      .price .amount {
+        font-size: 2rem;
+      }
+      
+      .section-header {
+        margin-bottom: 2rem;
       }
       
       .section-header h2 {
-        font-size: 1.75rem;
+        font-size: 1.5rem;
       }
       
       .section-header p {
-        font-size: 1rem;
+        font-size: 0.95rem;
       }
       
       .cta h2 {
-        font-size: 1.75rem;
+        font-size: 1.5rem;
       }
       
       .cta p {
-        font-size: 1rem;
+        font-size: 0.95rem;
+      }
+      
+      .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .cta-buttons .btn {
+        width: 100%;
+        max-width: 280px;
+        justify-content: center;
       }
       
       .contact-info h2 {
-        font-size: 1.75rem;
+        font-size: 1.5rem;
+      }
+      
+      .contact-form {
+        padding: 1.5rem;
+      }
+      
+      .form-group input,
+      .form-group textarea {
+        padding: 10px;
+        font-size: 16px; /* Prevents zoom on iOS */
+      }
+      
+      .btn {
+        padding: 12px 20px;
+        font-size: 1rem;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .hero h1 {
+        font-size: 1.5rem;
+      }
+      
+      .navbar-brand span {
+        display: none;
+      }
+      
+      .section-header h2 {
+        font-size: 1.35rem;
+      }
+      
+      .benefits-grid h2 {
+        font-size: 1.35rem !important;
       }
     }
     
