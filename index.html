@@ -689,6 +689,22 @@
       color: white;
     }
     
+    .pricing-card.enterprise {
+      border: 2px solid #1e3c72;
+      background: #f6f8ff;
+    }
+    
+    .pricing-card.enterprise .btn {
+      background: transparent;
+      color: #1e3c72;
+      border: 2px solid #1e3c72;
+    }
+    
+    .pricing-card.enterprise .btn:hover {
+      background: #1e3c72;
+      color: white;
+    }
+    
     .features-list {
       display: flex;
       flex-direction: column;
@@ -1491,13 +1507,13 @@
             <li><span class="material-icons">check_circle</span> Custom branding</li>
           </ul>
         </div>
-        <div class="pricing-card">
+        <div class="pricing-card enterprise">
           <h3>Enterprise</h3>
           <p class="desc">For large organizations</p>
           <div class="price">
             <span class="amount">Custom</span>
           </div>
-          <a href="#contact" class="btn btn-outline" style="color: #333; border-color: #ddd;">Contact Sales</a>
+          <a href="#contact" class="btn">Contact Sales</a>
           <ul class="features-list">
             <li><span class="material-icons">check_circle</span> Unlimited businesses</li>
             <li><span class="material-icons">check_circle</span> Unlimited platforms</li>
